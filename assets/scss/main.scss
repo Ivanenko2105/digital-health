@@ -1,0 +1,176 @@
+@import "libs/vars";
+
+.main {
+    color: #054569;
+
+    &-title {
+        margin-top: 113px;
+
+        &__title {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            line-height: 45px;
+        }
+
+        @media (min-width: 1024px) {
+            & {
+                margin-top: 87px;
+            }
+
+            &__title {
+                font-size: 60px;
+                line-height: 78px;
+            }
+        }
+    }
+
+    .text-with-img {
+        margin-top: 62px;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__text {
+            h2 {
+                text-align: center;
+                font-size: 25px;
+                font-family: "Poppins", sans-serif;
+                line-height: 32px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                margin-top: 20px;
+            }
+        }
+
+        &__img img {
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            & {
+                margin-top: 122px;
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__text {
+                width: 50%;
+                padding-left: 74px;
+            }
+
+            &__img {
+                width: 50%;
+            }
+
+            &__text {
+                h2 {
+                    text-align: left;
+                    font-size: 45px;
+                    line-height: 58px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .information-list {
+        margin-top: 80px;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px 18px;
+            background-color: #e7f5ff;
+            border-radius: 10px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+        }
+
+		@media (min-width: 1024px) {
+			& {
+				margin-top: 174px;
+			}
+		
+			&__content {
+				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+		
+			&__item {
+				flex-direction: row;
+				gap: 15px;
+				padding: 20px 25px;
+				width: 32.5%;
+			}
+		
+			h3 {
+				font-size: 25px;
+				line-height: 30px;
+			}
+		
+			p {
+				font-size: 18px;
+				line-height: 22px;
+				margin-top: 20px;
+			}
+		}
+    }
+
+	.sign-btn-section {
+		margin-top: 55px;
+
+		.sign-btn {
+			display: block;
+			max-width: 330px;
+			margin: 0 auto;
+		}
+
+		@media (min-width: 1024px) {
+			& {
+				margin-top: 75px;
+			}
+		
+			.sign-btn {
+				max-width: 200px;
+			}
+		}
+	}
+}

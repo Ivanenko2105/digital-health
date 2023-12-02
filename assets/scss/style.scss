@@ -1,0 +1,86 @@
+@import "libs/vars";
+@import "libs/header";
+@import "libs/footer";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf") format("ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: $montserrat;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+ul li,
+ol li {
+    margin: 0;
+}
+
+.container {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.simple-btn {
+    text-align: center;
+    background-color: #0f5174;
+    color: white;
+    padding: 13px 60px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+
+	&:hover {
+		scale: 1.05;
+	}
+	
+	&:active {
+		scale: 0.95;
+	}
+}

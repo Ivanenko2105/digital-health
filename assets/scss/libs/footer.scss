@@ -1,0 +1,199 @@
+.footer {
+	background-color: #054569;
+
+	.contacts {
+		margin-top: 150px;
+		padding-top: 57px;
+		padding-bottom: 77px;
+		color: #ffffff;
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			row-gap: 77px;
+
+			.address-content {
+				display: flex;
+				flex-direction: column;
+				row-gap: 50px;
+
+				&__images {
+					display: flex;
+					justify-content: space-between;
+					align-items: end;
+					column-gap: 48px;
+				}
+
+				.address-text__first-line {
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 28.8px;
+
+					span {
+						font-weight: 600;
+					}
+				}
+
+				.address-text__second-line {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 25.8px;
+				}
+			}
+
+			.download-content {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				row-gap: 30px;
+
+				&__title {
+					font-family: "Poppins";
+					font-weight: 500;
+					font-size: 22px;
+					line-height: 33px;
+					color: #e2e3e8;
+				}
+
+				&__download-block {
+					display: flex;
+					justify-content: space-between;
+					align-items: end;
+
+					.download-block__buttons-with-title {
+						display: flex;
+						flex-direction: column;
+						justify-content: end;
+						row-gap: 25px;
+
+						.download-block__buttons {
+							display: flex;
+							flex-direction: column;
+							row-gap: 20px;
+							column-gap: 25px;
+
+							.download-btn {
+								background-color: #698ca933;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								column-gap: 7px;
+								border-radius: 21px;
+								color: white;
+								padding: 3px 20px;
+								border: none;
+								outline: none;
+								cursor: pointer;
+								transition: scale 0.2s ease;
+
+								&:hover {
+									scale: 1.05;
+								}
+								
+								&:active {
+									scale: 0.95;
+								}
+								
+								p {
+									font-family: "Poppins";
+									font-weight: 300;
+									font-size: 10px;
+									line-height: 15px;
+								}
+
+								.name_btn {
+									font-family: "Poppins";
+									font-weight: 400;
+									font-size: 14px;
+									line-height: 21px;
+								}
+							}
+						}
+					}
+				}
+
+				&__title-2 {
+					display: none;
+				}
+			}			
+		}
+	}
+
+	.copyright {
+		background-color: #698ca933;
+		color: #ffffffd9;
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 500;
+
+		&__content {
+			padding: 40px 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			row-gap: 26px;
+
+			.content-links a {
+				color: #ffffffd9;
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.contacts {
+			margin-top: 180px;
+			padding-top: 101px;
+
+			&__content {
+				flex-direction: row;
+				column-gap: 20px;
+				justify-content: space-between;
+	
+				.address-content {
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: end;
+					column-gap: 5%;
+					width: 50%;
+				}
+
+				.download-content {
+					justify-content: end;
+
+					&__title-2 {
+						display: block;
+					}
+				
+					&__title {
+						display: none;
+					}
+
+					.download-content__download-block {
+						column-gap: 44px;
+
+						.download-block__buttons {
+							flex-direction: row;
+							align-items: end;
+	
+							.download-btn {
+								padding: 3px 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		.copyright {
+			font-size: 16px;
+			line-height: 19px;
+
+			.copyright__content {
+				padding: 45px 0px;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+	}
+}
