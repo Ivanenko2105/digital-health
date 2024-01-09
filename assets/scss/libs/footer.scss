@@ -1,11 +1,11 @@
 .footer {
-	background-color: #054569;
+	background-color: $main-color;
 
 	.contacts {
 		margin-top: 150px;
 		padding-top: 57px;
 		padding-bottom: 77px;
-		color: #ffffff;
+		color: $white;
 
 		&__content {
 			display: flex;
@@ -26,6 +26,7 @@
 				}
 
 				.address-text__first-line {
+					font-family: $montserrat;
 					font-weight: 400;
 					font-size: 18px;
 					line-height: 28.8px;
@@ -36,6 +37,7 @@
 				}
 
 				.address-text__second-line {
+					font-family: $montserrat;
 					font-weight: 400;
 					font-size: 16px;
 					line-height: 25.8px;
@@ -49,11 +51,11 @@
 				row-gap: 30px;
 
 				&__title {
-					font-family: "Poppins";
+					font-family: $poppins;
 					font-weight: 500;
 					font-size: 22px;
 					line-height: 33px;
-					color: #e2e3e8;
+					color: $download-text;
 				}
 
 				&__download-block {
@@ -74,13 +76,14 @@
 							column-gap: 25px;
 
 							.download-btn {
-								background-color: #698ca933;
+								background-color: $gray;
 								display: flex;
 								align-items: center;
 								justify-content: center;
 								column-gap: 7px;
 								border-radius: 21px;
 								color: white;
+								font-family: $montserrat;
 								padding: 3px 20px;
 								border: none;
 								outline: none;
@@ -90,20 +93,20 @@
 								&:hover {
 									scale: 1.05;
 								}
-								
+
 								&:active {
 									scale: 0.95;
 								}
-								
+
 								p {
-									font-family: "Poppins";
+									font-family: $poppins;
 									font-weight: 300;
 									font-size: 10px;
 									line-height: 15px;
 								}
 
 								.name_btn {
-									font-family: "Poppins";
+									font-family: $poppins;
 									font-weight: 400;
 									font-size: 14px;
 									line-height: 21px;
@@ -116,13 +119,14 @@
 				&__title-2 {
 					display: none;
 				}
-			}			
+			}
 		}
 	}
 
 	.copyright {
-		background-color: #698ca933;
-		color: #ffffffd9;
+		background-color: $gray;
+		font-family: $montserrat;
+		color: $copyright-text;
 		font-size: 14px;
 		line-height: 17px;
 		font-weight: 500;
@@ -135,7 +139,8 @@
 			row-gap: 26px;
 
 			.content-links a {
-				color: #ffffffd9;
+				font-family: $montserrat;
+				color: $copyright-text;
 			}
 		}
 	}
@@ -149,7 +154,7 @@
 				flex-direction: row;
 				column-gap: 20px;
 				justify-content: space-between;
-	
+
 				.address-content {
 					flex-direction: row;
 					justify-content: space-between;
@@ -164,7 +169,7 @@
 					&__title-2 {
 						display: block;
 					}
-				
+
 					&__title {
 						display: none;
 					}
@@ -175,7 +180,7 @@
 						.download-block__buttons {
 							flex-direction: row;
 							align-items: end;
-	
+
 							.download-btn {
 								padding: 3px 10px;
 							}
@@ -184,7 +189,7 @@
 				}
 			}
 		}
-	
+
 		.copyright {
 			font-size: 16px;
 			line-height: 19px;
